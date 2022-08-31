@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexos</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <img class="logo" src="Materiales\Materiales\logo.png">
+        <img class="logo" src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\logo.png">
         <a href="#aboutUs" class="nosotros">Nosotros</a>
         <a href="#news" class="noticias">Noticias</a>
         <a href="#contact" class="ayuda">Ayuda</a>
@@ -36,7 +36,7 @@
         <div id="aboutUs">
             <div id="nosotros">
                 <div id="gridNosotros">
-                    <div class="boxImgEmp"><img src="Materiales/Materiales/oficina.png" id="imgEmp"></div>
+                    <div class="boxImgEmp"><img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\oficina.png" id="imgEmp"></div>
                     <div id="txtEmp">
                         <h2>Soluciones para empresas</h2></br>
                         <p>Generamos un medio para que las empresas se involucren en</br>
@@ -52,37 +52,37 @@
                         Equipo de voluntarios para empresas dispuestos a potenciar tu </br>
                         impacto en la sociedad.</p>
                     </div>      
-                    <div class="boxImgOrg"><img src="Materiales/Materiales/voluntariado.jpg" id="imgOrg"></div>
+                    <div class="boxImgOrg"><img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\Voluntariado Recortado.jpg" id="imgOrg"></div>
             </div>
         </div>
             <div id="oportunity">
                 <!--        ACA EMPIEZA LO NUEVO        -->
 
-                <h1>Encuentra las mejores oportunidades</h1></br>
-                <p>La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y medioambientales), donde</br>
+                <h1 class="txtoprt">Encuentra las mejores oportunidades</h1></br>
+                <p class="poprt">La plataforma cuenta con gran variedad de proyectos locales (sociales, educativos y medioambientales), donde</br>
                 encontraras el que mejor se adapte a la experiencia que estas buscando.</br>
                 Te ayudamos en la cordinacion con la organizacion de forma simple y rapida.
                 </p>
 
                 <div id="boxFour">
                 <div id="boxVoluntario" class="boxes">
-                    <img src="Materiales/Materiales/icono-mano.png" class="imgLeft">
-                    <img src="Materiales/Materiales/icono-mas.png" class="imgRight">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mano.png" class="imgLeft">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Ser Voluntario</p>
                 </div>
                 <div id="boxDonar" class="boxes">
-                    <img src="Materiales/Materiales/icono-mano-corazon.png" class="imgLeft">
-                    <img src="Materiales/Materiales/icono-mas.png" class="imgRight">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mano-corazon.png" class="imgLeft">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Donar</p>
                 </div>
                 <div id="boxReciclar" class="boxes">
-                    <img src="Materiales/Materiales/icono-reciclar.png" class="imgLeft">
-                    <img src="Materiales/Materiales/icono-mas.png" class="imgRight">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-reciclar.png" class="imgLeft">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Reciclar</p>
                 </div>
                 <div id="boxLlamados" class="boxes">
-                    <img src="Materiales/Materiales/icono-maletin.png" class="imgLeft">
-                    <img src="Materiales/Materiales/icono-mas.png" class="imgRight">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-maletin.png" class="imgLeft">
+                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Llamados <br/>laborales</p>
                 </div>
             </div>
@@ -94,7 +94,25 @@
         </div>
 
         <div id="contact">
-            <h1>CONTACTO</h1>
+            <div>
+                <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\laptop-escritorio-recortada.jpg" class="imgcont">
+            </div>
+            <div class="formulrio">
+                <h1 class="txtcont">Contacto</h1>
+                <form action="/action_page.php" class="Boxone">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <div class="col-75">
+                        <textarea class="Boxtwo" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                    <div>
+                        <input type="buttonCont" value="Submit" class="submit">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
@@ -104,6 +122,3 @@
 
 </body>
 </html>
-
-
-<!-- PRUEBA-->>
