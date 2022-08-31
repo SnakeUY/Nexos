@@ -5,34 +5,58 @@
 
 html, body {
     height: 100vh;
-    background-color: black;
     font-family: "DM Sans", sans-serif; 
 }
-
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 nav{
     display: grid;
-    grid-template-columns: 30% 15% 15% 15% 1fr;
+    grid-template-columns: 25% 10% 10% 10% 1fr;
     grid-template-rows: 1fr;
     gap:10px;
-    background-color:rgb(248, 243, 237);
     padding:10px;
     align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 5px;
 }
-.logo { grid-area: 1 / 1 / 2 / 2; }
+
+.logo { 
+    margin-left: 150px;
+    grid-area: 1 / 1 / 2 / 2; 
+    background-position: center;
+    height: 65%;
+}
 .nosotro { grid-area: 1 / 2 / 2 / 3; }
 .noticias { grid-area: 1 / 3 / 2 / 4; }
 .ayuda { grid-area: 1 / 4 / 2 / 5; }
-.buttonNav { grid-area: 1 / 5 / 2 / 6; }
+.buttonNav { 
+    grid-area: 1 / 5 / 2 / 6; 
+    justify-self: end;
+    margin-right: 150px;
+}
+#buttonNav{
+    background-color: RGB(82,39,204);
+    color: white;
+    border-radius: 20px;
+    border-color:transparent;
+    padding: 8px;
+    width: 120px;
+
+}
 
 header{
     background-image: url("Materiales/Materiales/manos.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 40vh;
-    margin-left: 5px;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 70vh;
 }
 .manos{
-    background-color: rgba(0, 0, 0, 0.212);
+    background-color: rgba(1, 0, 51, 0.368);
     height: 100%;
 }
 .texto{
@@ -46,10 +70,69 @@ header{
     height: 100%;
     font-size: x-large;
 }
-a:link, a:visited, a:hover, a:active {
-    color: black;
-    text-decoration: none;
+
+#nosotros{
+    background-color: rgb(82,152,255);
+    height: 100vh;
+    width: 100%;
 }
-
-
+#gridNosotros{
+    padding-top: 85px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    gap: 15px;
+}
+#imgEmp{
+    margin-top: 100px;
+    margin-left: 150px;
+    grid-area: 1/1/2/2;
+    width: 80%;
+    height: 350px;
+}
+#txtEmp{
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 150px;
+    grid-area: 1/2/2/3;
+    color: white;
+    font-size: x-large;
+}
+#txtOrg{
+    margin-left: 150px;
+    grid-area: 2/1/3/2;
+    color: white;
+    font-size: x-large;
+    justify-self:right;
+    margin-right: 50px;
+}
+.boxImgOrg{
+    padding: 10px;
+}
+#imgOrg{
+    margin-top: 0%;
+    margin-right: 150px;
+    grid-area: 2/2/3/3;
+    width: 80%;
+    height: 350px;
+}
+#oportunity{
+    height: 70vh;
+}
+#news{
+    height: 100vh;
+    background-color: rgb(82,152,255);
+}
+#contact{
+    height: 70vh;
+}
+footer{
+    height: 40vh;
+    background-color: rgb(119,73,248);
+}
+h2{
+    font-weight: lighter;
+    font-size: 48px;
+}
 
