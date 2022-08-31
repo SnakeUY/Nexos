@@ -117,9 +117,71 @@ header{
     width: 80%;
     height: 350px;
 }
+
+/*      Aca empieza lo nuevo    */
 #oportunity{
+    margin-top: 70px;
     height: 70vh;
+    text-align: center;
+    font-size: x-large;
 }
+#boxFour{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 100px;
+}
+.boxes{
+    height: 240px;
+    width: 320px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 60%;
+    border-radius: 25px;
+    row-gap:  20px;
+}
+#boxVoluntario{
+    background-color: rgb(220, 53, 69);
+    grid-area: 1/1/2/2;
+}
+#boxDonar{
+    background-color: rgb(255, 156, 7);
+    grid-area: 1/2/2/3;
+}
+#boxReciclar{
+    background-color: rgb(40, 167, 69);
+    grid-area: 1/3/2/4;
+}
+#boxLlamados{
+    background-color: rgb(23, 162, 184);
+    grid-area: 1/4/2/5;
+}
+.imgLeft{
+    grid-area: 1/1/2/2;
+    padding: 20px;
+    height: 80px;
+    display: block;
+    justify-content: left;
+}
+.imgRight{
+    grid-area: 1/2/2/3;
+    height: 30px;
+    justify-self: end;
+    padding: 20px;
+}
+.boxText{
+    grid-area: 2/1/3/3;
+    color:white;
+    font-size: 40px;
+    text-align: left;
+    align-self: center;
+    padding: 20px;
+}
+/*      Aca termina lo nuevo    */
 #news{
     height: 100vh;
     background-color: rgb(82,152,255);
@@ -136,3 +198,4 @@ h2{
     font-size: 48px;
 }
 
+/* PRUEBA */
