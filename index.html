@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexos</title>
-    <link href="estilos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <img class="logo" src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\logo.png">
+        <img class="logo" src="Materiales/Materiales/logo.png">
         <a href="#aboutUs" class="nosotros">Nosotros</a>
         <a href="#news" class="noticias">Noticias</a>
         <a href="#contact" class="ayuda">Ayuda</a>
         <div class="buttonNav">
-            <button id="buttonNav">INGRESAR</button>
+            <button class="Stylebutton">INGRESAR</button>
         </div>
     </nav>
     <header>
@@ -36,7 +36,7 @@
         <div id="aboutUs">
             <div id="nosotros">
                 <div id="gridNosotros">
-                    <div class="boxImgEmp"><img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\oficina.png" id="imgEmp"></div>
+                    <div class="boxImgEmp"><img src="Materiales\Materiales\oficina.png" id="imgEmp"></div>
                     <div id="txtEmp">
                         <h2>Soluciones para empresas</h2></br>
                         <p>Generamos un medio para que las empresas se involucren en</br>
@@ -52,7 +52,7 @@
                         Equipo de voluntarios para empresas dispuestos a potenciar tu </br>
                         impacto en la sociedad.</p>
                     </div>      
-                    <div class="boxImgOrg"><img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\Voluntariado Recortado.jpg" id="imgOrg"></div>
+                    <div class="boxImgOrg"><img src="Materiales\Materiales/Voluntariado Recortado.jpg" id="imgOrg"></div>
             </div>
         </div>
             <div id="oportunity">
@@ -66,23 +66,23 @@
 
                 <div id="boxFour">
                 <div id="boxVoluntario" class="boxes">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mano.png" class="imgLeft">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
+                    <img src="Materiales\Materiales\icono-mano.png" class="imgLeft">
+                    <img src="Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Ser Voluntario</p>
                 </div>
                 <div id="boxDonar" class="boxes">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mano-corazon.png" class="imgLeft">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
+                    <img src="Materiales\Materiales\icono-mano-corazon.png" class="imgLeft">
+                    <img src="Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Donar</p>
                 </div>
                 <div id="boxReciclar" class="boxes">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-reciclar.png" class="imgLeft">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
+                    <img src="Materiales\Materiales\icono-reciclar.png" class="imgLeft">
+                    <img src="Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Reciclar</p>
                 </div>
                 <div id="boxLlamados" class="boxes">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-maletin.png" class="imgLeft">
-                    <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\icono-mas.png" class="imgRight">
+                    <img src="Materiales\Materiales\icono-maletin.png" class="imgLeft">
+                    <img src="Materiales\Materiales\icono-mas.png" class="imgRight">
                     <p class="boxText">Llamados <br/>laborales</p>
                 </div>
             </div>
@@ -94,25 +94,23 @@
         </div>
 
         <div id="contact">
-            <div>
-                <img src="C:\Users\majoa\Desktop\HTML\Materiales\Materiales\laptop-escritorio-recortada.jpg" class="imgcont">
-            </div>
-            <div class="formulrio">
-                <h1 class="txtcont">Contacto</h1>
-                <form action="/action_page.php" class="Boxone">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <div class="col-75">
-                        <textarea class="Boxtwo" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <img src="Materiales\Materiales\laptop-escritorio-recortada.jpg" class="imgcont">
+                <form id="dataForm" action="/action_page.php" class="Boxone">
+                    <h1 class="txtcont">Contacto</h1>
+                    <div class="emailPos">
+                    <label for="email" class="top">Correo Electronico</label>
+                    <input type="email" id="email" name="email" placeholder="Your email.."class="down fullwidth">
                     </div>
-                    <div>
-                        <input type="buttonCont" value="Submit" class="submit">
+                    <div class="phonePos">
+                    <label for="phoneNun"class="top">Numero Telefonico</label>
+                    <input type="number" id="phoneNun" name="PhoneNumnber" placeholder="Your phone number.." class="down fullwidth">
                     </div>
+                    <div class="textarea500pos">
+                    <label for="phoneNun" class="top">Mensaje</label>
+                    <textarea type="email" id="textarea500" placeholder="Escribe tu mensaje aqui..." maxlength="500" class="down fullwidth"></textarea>
+                    </div>
+                    <button type="button" class="btnsumbit Stylebutton">Enviar</button>
                 </form>
-            </div>
         </div>
     </main>
 

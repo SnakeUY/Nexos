@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 html, body {
     height: 100vh;
     font-family: "DM Sans", sans-serif; 
@@ -38,18 +42,19 @@ nav{
     justify-self: end;
     margin-right: 100px;
 }
-#buttonNav{
+.Stylebutton{
     background-color: RGB(82,39,204);
     color: white;
     border-radius: 20px;
     border-color:transparent;
     padding: 8px;
     width: 120px;
-
 }
+    
+
 
 header{
-    background-image: url("C:/Users/majoa/Desktop/HTML/Materiales/Materiales/manos.jpg");
+    background-image: url("Materiales/Materiales/manos.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -203,20 +208,101 @@ h2{
     height: 100vh;
     background-color: rgb(82,152,255);
 }
+
 #contact{
+    margin-left: 100px;
+    margin-right: 100px;
     height: 70vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 50% 1fr;
+    grid-template-rows: 70px 230px 70px;
+    gap: 5px;
 }
+
 .imgcont{
     grid-area: 2 / 1 / 3 / 2;
-    height: 270px;
-    width: 600px;
+    height: 230px;
+    width: 550px;
 }
-.formulario{
-    grid-area: 2 / 2 / 3 / 4;
+
+
+
+#dataForm{
+    grid-area: 2/2/3/3;
 }
+
+.Boxone{
+    margin-left: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 20% 20% 30%;
+    height: 200px;
+}
+
+
+.txtcont{
+    grid-area: 1/1/2/3;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bolder;
+}
+.emailPos{
+    grid-area: 2/1/3/2;
+}
+
+.phonePos{
+    grid-area: 3/1/4/2;
+}
+
+.fullwidth{
+    height: 25px;
+    width: 93%;
+    padding-left: 15px;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: rgba(54, 54, 54, 0.349);
+}
+
+.textArea500pos{
+    padding: 25px;
+    grid-area: 2/2/4/3;
+
+}
+
+#textarea500{
+    height:76px;
+    padding-left: 5px;
+    resize: none;
+    font-family: "DM Sans", sans-serif; 
+}
+
+.btnsumbit{
+    grid-area: 4/1/5/3;
+    justify-self: center;
+    align-self: center;
+    height: 20px;
+    font-size: smaller;
+    padding: 0px;
+    width: 80px;
+}
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: flex-start;
+    font-size: x-small;
+    font-weight: bold;
+}
+.down{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+
+
+
 footer{
     height: 40vh;
     background-color: rgb(119,73,248);
