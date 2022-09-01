@@ -8,11 +8,11 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="inicio">
         <img class="logo" src="Materiales/Materiales/logo.png">
-        <a href="#aboutUs" class="nosotros">Nosotros</a>
-        <a href="#news" class="noticias">Noticias</a>
-        <a href="#contact" class="ayuda">Ayuda</a>
+        <a href="#aboutUs" class="navNosotros">Nosotros</a>
+        <a href="#news" class="navNoticias">Noticias</a>
+        <a href="#contact" class="navAyuda">Ayuda</a>
         <div class="buttonNav">
             <a href="#modalWindow" class="open-modal pointer">Ingresar</a>
         </div>
@@ -24,7 +24,7 @@
             </div>
             <div class="rightSideModal">
                 <div class="modal-header boxes ">
-                    <div class="modalImgBack pointer"><img src="Materiales/Materiales/icono-flecha.png" style="transform: scaleX(-1);"> volver atras</div>
+                    <div class="modalImgBack pointer"><a href="#close" style="color:lightgray"><img src="Materiales/Materiales/icono-flecha.png" style="transform: scaleX(-1);">volver atras</a></div>
                     <div class="cls-modal pointer"><a href="#close" style="color:lightgray">X</a></div>
                 </div>
                 <div class="titleModal">REGISTRAR</div>
@@ -144,7 +144,7 @@
     <div class="linea"></div>
     <div class="whiteline"></div>
     <footer>
-        <img src="Materiales\Materiales\logo-blanco.png" class="logoBN">
+        <a href="#inicio"><img src="Materiales\Materiales\logo-blanco.png" class="logoBN"></a>
             <ul>
                 <div class="footerlist">
                 <li class="footernosotros">Nosotros</li><br>
@@ -155,9 +155,9 @@
             </ul>
         <div class="redessociales">
             <p class="Seguinos">Seguinos!</p>
-            <img class="facebook" src="Materiales\Materiales\logo-facebook.png">
-            <img class="twitter" src="Materiales\Materiales\logo-twitter.png">
-            <img class="instagram" src="Materiales\Materiales\logo-instagram.png">
+            <a href="https://www.facebook.com/senpaiacademy/" target="_blank"><img class="facebook" src="Materiales\Materiales\logo-facebook.png"></a>
+            <a href="https://twitter.com/senpaiacademy" target="_blank"><img class="twitter" src="Materiales\Materiales\logo-twitter.png"></a>
+            <a href="https://www.instagram.com/senpai.academy/" target="_blank"><img class="instagram" src="Materiales\Materiales\logo-instagram.png"></a>
         </div>
         <hr class="bottomline">
     </footer>
