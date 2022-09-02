@@ -209,15 +209,140 @@ h2{
 #news{
     height: 100vh;
     background-color: rgb(82,152,255);
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    grid-template-rows: 20% 65% 15%;
 }
 .noticias{
     color: white;
+    font-size: 45px;
+    grid-area: 1 / 3 / 2 / 5;
+    align-self: center;
+    margin-left: 200px;
 }
 .linknews{
     color: white;
     font-weight: lighter;
+    grid-area: 1 / 3 / 2 / 5;
+    align-self: center;
+    margin-left: 250px;
+    margin-top: 60px;
+    font-size: 12px;
+    text-decoration-line: underline;
 }
-
+.boxOne{grid-area: 2 / 2 / 3 / 3;}
+.boxTwo{grid-area: 2 / 3 / 3 / 4;}
+.boxThree{grid-area: 2 / 4 / 3 / 5;}
+.boxFour{grid-area: 2 / 5 / 3 / 6;}
+.caja{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 10% 10% 10% 20% 10%;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.imgnoticia{
+    grid-area: 1/1/3/3;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pfecha{
+    grid-area: 3/1/4/2;
+    font-size: 13px;
+    text-align: right;
+    margin-right: 30px;
+    justify-self: end;
+    margin-top: 12px;
+}
+.calendario{
+    grid-area: 3/1/4/2;
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-left: 15px;
+    width: 18px;
+}
+.phora{
+    grid-area: 3/2/4/3;
+    justify-self: end;
+    margin-top: 10px;
+    margin-right: 13px;
+    font-size: 13px;
+}
+.reloj{
+    grid-area: 3/2/4/3;
+    align-self: flex-start;
+    margin-left: 65px;
+    margin-top: 8px;
+    width: 18px;
+}
+.subtitulo{
+    grid-area: 4/1/5/3;
+    font-size: 14.5px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.parrafo{
+    grid-area: 5/1/6/3;
+    font-size: 13px;
+    margin-left: 10px;
+    color: gray;
+    margin-top: 10px;
+}
+.flecha{
+    grid-area: 6/2/7/3;
+    justify-self: start;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.vermas{
+    grid-area: 6/2/7/3;
+    font-size: 12px;
+    justify-self: end;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: gray;
+}
+.carteles{
+    grid-area: 2/1/3/2;
+    width: 70px;
+    height: 20px;
+    background-color: RGB(82,39,204);
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    margin-left: 18px;
+    border-width: 0px;
+}
+.cartel{
+    grid-area: 2/1/3/2;
+    width: 100px;
+    height: 20px;
+    background-color: RGB(82,39,204);
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    margin-left: 18px;
+    border-color:transparent;
+}
+.carrusel{
+    grid-area: 3/3/4/5;
+    margin-left: 175px;
+    margin-top: 20px;
+}
+.boton{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 50px;
+    border-color:transparent;
+    margin-left: 20px;
+}
 
 #contact{
     margin-left: 100px;
