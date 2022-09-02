@@ -443,7 +443,7 @@ h2{
 }
 footer{
     height: 40vh;
-    background-color: rgb(119,73,248);  
+    background: linear-gradient(50deg, rgb(119,73,248),rgb(82,39,204)); 
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 70% 30%;
