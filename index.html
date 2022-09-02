@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexos</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="JavaScript.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 
@@ -206,7 +207,7 @@
                     <label for="textarea500" class="top">Mensaje</label>
                     <textarea type="email" id="textarea500" placeholder="Escribe tu mensaje aqui..." maxlength="500" class="down fullwidth"></textarea>
                     </div>
-                    <button type="button" class="btnsumbit Stylebutton">Enviar</button>
+                    <button type="button" id="pressButton" class="btnsumbit Stylebutton">Enviar</button>
                 </form>
         </div>
     </main>
@@ -231,44 +232,9 @@
         <div class="lastline">
         <hr class="bottomline">
         </br>
-        <p class="derechos">Todos los derechos reservados</p>
+        <p class="derechos">Copyright ⓒ 2021 All rights reserverd.</p>
         </div>
     </footer>
-
-<script type="text/javascript">
-if ($(window).width() < 480 || $(window).height() < 480) {
-        //the script has been added to the DOM, you can now use it's code
-
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("caja");
-    let dots = document.getElementsByClassName("boton");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "grid";
-    dots[slideIndex-1].className += " active";
-    }
-
-}
-</script>
 </body>
+
 </html>
