@@ -11,7 +11,6 @@ html, body {
     height: 100vh;
     font-family: "DM Sans", sans-serif; 
     overflow-x: hidden;
-
 }
 a{
     color: black;
@@ -510,6 +509,7 @@ footer{
     align-self: center;
     font-weight: bold;
 }
+
 .textModalBoxes{
     grid-area: 2/2/3/3;
     margin-left: 10%;
@@ -524,8 +524,173 @@ footer{
     justify-self: flex-end;
     margin-right: 10%;
 }
-@media screen and (max-width: 768px) {
-    .modal-content {
-        width: 80%;
+@media (max-height: 844px) {
+    @media (max-width: 390px){
+
+        html{
+            display: grid;
+            grid-template-areas: 
+            "nav"
+            "header"
+            "aboutUs"
+            "oportunity"
+            "news"
+            "contact"
+            "linea"
+            "whiteline"
+            "footer"
+            ;
+        }
+        #inicio{
+            grid-area: nav;
+            display: grid;
+            grid-template-columns: 33% 34% 33%;
+            grid-template-rows: 60% 40%;
+        }
+        .logo{
+            margin-left: 20px;
+            grid-area: 1/1/2/3;
+            height: 50px;
+            width: 200px;
+            justify-self: left;
+        }
+        .navNosotros{
+            grid-area: 2/1/3/2;
+        }
+        .navNoticias{
+            grid-area: 2/2/3/3;
+        }
+        .navAyuda{
+            grid-area: 2/3/3/4;
+        }
+        .buttonNav{
+            grid-area: 1/3/2/4;
+            justify-self:normal;
+        }
+        .open-modal{
+            color: #fff;
+        }
+        header{
+            grid-area: header;
+            height: 400px;
+        }
+        #aboutUs{
+            grid-area: aboutUs;
+        }
+        .manos{
+            width: 100%;
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+        }
+        #nosotros{height: 120vh; margin-bottom: 20px;}
+        #gridNosotros{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% 25%;
+            justify-content: center;
+            padding-top: 35px;
+        }
+
+        .boxImgEmp{grid-area: 1/1/2/2;}
+        #imgEmp{
+            height:200px;
+            padding-left: 0%;
+            margin-left: 25px;
+            margin-right: 25px;
+            width: 90%;
+        }
+        #txtEmp{
+            grid-area: 2/1/3/2;
+            padding-left: 0%;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: center;
+        }
+        .titleMobile {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .boxImgOrg{grid-area: 3/1/4/2;}
+        #imgOrg{
+            height:200px;
+            padding-left: 0%;
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 90%;
+            text-align: center;
+        }
+        #txtOrg{
+            grid-area: 4/1/5/2;
+            padding-left: 0%;
+            margin-left: 25px;
+            margin-right: 25px;
+            text-align: center;
+        }
+        .poprt{
+            display: none;
+        }
+
+        #oportunity{
+            grid-area: oportunity;
+            height: max-content;
+            margin-bottom: 100px;
+        }
+        #boxFour{
+            grid-template-columns: 1fr;
+            grid-template-rows: 25% 25% 25% 25%;
+            gap: 15px;
+        }
+        #boxVoluntario{grid-area: 1/1/2/2;}
+        #boxDonar{grid-area: 2/1/3/2;}
+        #boxReciclar{grid-area: 3/1/4/2;}
+        #boxLlamados{grid-area: 4/1/5/2;}
+
+        #news{
+            grid-area: news;
+        }
+        #contact{
+            grid-area: contact;
+            height: 35vh;
+            display: grid;
+            grid-template-columns: 100% !important;
+            grid-template-rows: 100% !important;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 60px;
+            margin-top: 60px;
+            width: 90%;
+        }
+        #dataForm{grid-area: 1/1/2/2;}
+        .Boxone{
+            margin-left: 0px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 15% 15% 15% 15% 25%;
+            width: 100%;
+        }
+        #textarea500{
+            width: 100%;
+            padding-left: 15px;
+        }
+        .imgcont{display: none; grid-area: none;}
+        .txtcont{grid-area: 1/1/2/2;}
+        .emailPos{grid-area: 2/1/3/2;}
+        .phonePos{grid-area: 3/1/4/2;}
+        .textarea500pos{grid-area: 4/1/5/2;}
+        .btnsumbit{grid-area: 6/1/7/2;}
+
+        .linea{
+            grid-area: linea;
+        }
+        .fullwidth{width: 100%;}
+        .whiteline{
+            grid-area: whiteline;
+        }
+        footer{
+            grid-area: footer;
+            display: none;
+        }
     }
 }
