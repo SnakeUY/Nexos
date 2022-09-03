@@ -212,7 +212,7 @@ h2{
     background-color: rgb(82,152,255);
     display: grid;
     grid-template-columns: 10% 20% 20% 20% 20% 10%;
-    grid-template-rows: 20% 65% 15%;
+    grid-template-rows: 23% 65% 12%;
 }
 .noticias{
     color: white;
@@ -333,7 +333,7 @@ h2{
 }
 .carrusel{
     grid-area: 3/3/4/5;
-    margin-left: 175px;
+    text-align: center;
     margin-top: 20px;
 }
 .boton{
@@ -959,8 +959,86 @@ footer{
 
 }
 
-@media (min-height: 1919px) {
-    @media (max-width: 1079px){
-
+@media (min-height: 800px) {
+    @media (min-width: 1800px){
+        .h1principal{
+            font-size: 50px;
+        }
+        .pprincipal{
+            font-size:  30px;
+        }
+    #imgEmp{
+        margin-left: 120px;
+        height: 350px;
     }
+    #txtEmp{
+        align-self: center;
+        margin-left: 50px;
+        margin-right: 150px;
+        font-size: x-large;
+    }
+    #txtOrg{
+        margin-left: 150px;
+        font-size: x-large;
+        margin-right: 50px;
+    }
+    #imgOrg{
+        margin-right: 150px;
+        height: 350px;
+    }
+    #oportunity{
+        height: 70vh;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    .poprt{
+        font-size: large;
+        font-weight: normal;
+    }
+    #boxFour{
+        margin-top: 100px;
+    }
+    .boxes{
+        height: 240px;
+        width: 320px;
+        row-gap:  20px;
+    }
+    .imgLeft{
+        padding: 20px;
+        height: 80px;
+    }
+    .imgRight{
+        height: 30px;
+    }
+    .boxText{
+        font-size: 40px;
+    }
+    .noticias{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .linknews{
+        text-align: center;
+        
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .top{
+        font-size: 15px;
+    }
+    .imgcont{
+        width: 100%;
+        height: 100%;
+    }
+    #contact{
+        grid-template-rows: 25% 50% 25%;
+    }
+    .Boxone{
+        height: 100%;
+    }
+    .txtcont{
+        font-size: 50px;
+    }
+}
 }
