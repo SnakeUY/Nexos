@@ -44,7 +44,6 @@ function esempresa(){
     boton.innerText ="EMPRESA";
     boton.classList.add("afterclick");
     boton2.className += " afterclick"
-
 }
 function esorganizacion(){
     let boton =document.getElementById("botonNombre");

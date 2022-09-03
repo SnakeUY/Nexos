@@ -1,17 +1,14 @@
+/*Sorry Becco por tanto codigo :(*/
 * {
     margin: 0;
     padding: 0;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 html, body {
     height: 100vh;
     font-family: "DM Sans", sans-serif; 
     overflow-x: hidden;
 }
+/*Barra Navegadora*/
 a{
     color: black;
     text-decoration: none;
@@ -54,9 +51,7 @@ nav{
     padding: 8px;
     width: 120px;
 }
-    
-
-
+/*Header*/ 
 header{
     background-image: url("Materiales/Materiales/manos.jpg");
     background-repeat: no-repeat;
@@ -86,7 +81,7 @@ h2{
     font-weight: lighter;
     font-size: 30px;
 }
-
+/*Sección Nosotros*/
 #nosotros{
     background-color: rgb(82,152,255);
     height: 100vh;
@@ -137,8 +132,7 @@ h2{
     width: 80%;
     height: 200px;
 }
-
-/*      Aca empieza lo nuevo    */
+/*Cuadrados de oportunidades*/
 #oportunity{
     margin-top: 70px;
     height: 75vh;
@@ -207,6 +201,7 @@ h2{
     padding: 20px;
     font-weight: lighter;
 }
+/*Noticias*/
 #news{
     height: 100vh;
     background-color: rgb(82,152,255);
@@ -241,7 +236,6 @@ h2{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 40% 10% 10% 10% 20% 10%;
-    border-radius: 10px;
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -348,7 +342,7 @@ h2{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
+/*Formulario contacto*/
 #contact{
     margin-left: 100px;
     margin-right: 100px;
@@ -364,11 +358,14 @@ h2{
     height: 230px;
     width: 550px;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 #dataForm{
     grid-area: 2/2/3/3;
 }
-
 .Boxone{
     margin-left: 20px;
     display: grid;
@@ -377,8 +374,6 @@ h2{
     grid-template-rows: 30% 20% 20% 30%;
     height: 200px;
 }
-
-
 .txtcont{
     grid-area: 1/1/2/3;
     text-align: center;
@@ -401,13 +396,10 @@ h2{
     border-width: 1px;
     border-color: rgba(54, 54, 54, 0.349);
 }
-
 .textArea500pos{
     padding: 25px;
     grid-area: 2/2/4/3;
-
 }
-
 #textarea500{
     height:76px;
     padding-left: 5px;
@@ -438,6 +430,7 @@ h2{
     flex-direction: column;
     justify-self: flex-end;
 }
+/*Footer*/
 .linea{
     height: 1.5vh;
     background-color: RGB(82,39,204);
@@ -492,6 +485,7 @@ footer{
     width: 20px;
     height: 20px;  
 }
+/*Modal*/
 .derechos{color: rgba(0, 0, 0, 0.596); font-size: smaller;margin-top: 10px; text-align: center;}
 .lastline{grid-area: 2/1/3/4;}
 .bottomline{
@@ -689,6 +683,7 @@ footer{
     text-align: center;
     font-weight: bolder;
 }
+/*Adaptación Mobile*/
 @media (max-height: 844px) {
     @media (max-width: 390px){
         .afterclick{
@@ -894,6 +889,7 @@ footer{
             margin: auto;
             height: 100%;
         }
+        /*Carrusel de Noticias*/
         
         /* Hide the images by default */
         .mySlides {
@@ -939,12 +935,13 @@ footer{
         }
         .subtitulo{
         text-align: center;
-        font-size: 25px;
+        font-size: 23px;
+
         }
         .parrafo{
-            margin-top: 30px;
+        margin-top: 20px;
         text-align: center;
-        font-size: 20;
+        font-size: 18px;
         }
         .flecha{
         justify-self: right;
@@ -958,7 +955,7 @@ footer{
 }
 
 }
-
+/*Adaptación PC*/
 @media (min-height: 800px) {
     @media (min-width: 1800px){
         .h1principal{
@@ -1023,6 +1020,18 @@ footer{
         
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .subtitulo{
+        font-size: 18px;
+    }
+    .parrafo{
+        font-size: 15px;
+    }
+    .reloj, .pfecha{
+        justify-self: center;
+    }
+    .flecha{
+        margin-left: 100px;
     }
     .top{
         font-size: 15px;
