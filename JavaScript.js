@@ -1,4 +1,17 @@
-    let slideIndex = 1;
+
+    if( localStorage.getItem ( "opcion" )){
+        let opcion = localStorage.getItem( "opcion" )
+        if (opcion == "empresa" ){
+            esempresa();
+        }else if (opcion == "organizacion"){
+            esorganizacion();
+        }
+    }else{
+        localStorage.setItem( "opcion", "" )
+    }
+
+
+   let slideIndex = 1;
     showSlides(slideIndex);
 
     function plusSlides(n) {
@@ -25,21 +38,33 @@
     dots[slideIndex-1].className += " active";
     }
 }
-
-$('div.miEmpresa').click(function(){
+function esempresa(){
     let boton =document.getElementById("botonNombre");
-    let boton2 =document.getElementById("buttonNav");
+    let boton2 =document.getElementsByClassName("buttonNav");
     boton.innerText ="EMPRESA";
-    boton.className+=" afterclick";
-    boton2.className+=" afterclick";
+    boton.classList.add("afterclick");
+    boton2.className += " afterclick"
+
+}
+function esorganizacion(){
+    let boton =document.getElementById("botonNombre");
+    let boton2 =document.getElementsByClassName("buttonNav");
+    boton.innerText ="ORGANIZACION";
+    boton.classList.add("afterclick");
+    boton2.className += " afterclick"
+}
+$('div.miEmpresa').click(function(){
+    opcion = "empresa"
+    localStorage.setItem("opcion",opcion);
+    esempresa();
+    window.location.href = "#close";
 });
 
 $('div.miOrganizacion').click(function(){
-    let boton =document.getElementById("botonNombre");
-    let boton2 =document.getElementById("buttonNav");
-    boton.innerText ="ORGANIZACION";
-    boton.className+=" afterclick";
-    boton2.className+=" afterclick";
+    opcion = "organizacion"
+    localStorage.setItem("opcion",opcion);
+    esorganizacion();
+    window.location.href = "#close";
 });
 
 function validaremail(){
