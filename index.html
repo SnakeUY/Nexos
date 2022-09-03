@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexos</title>
     <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="JavaScript.js">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
 
@@ -18,7 +18,7 @@
         <a href="#news" class="navNoticias">Noticias</a>
         <a href="#contact" class="navAyuda">Ayuda</a>
         <div class="buttonNav">
-            <a href="#modalWindow" class="open-modal pointer">Ingresar</a>
+            <a href="#modalWindow" class="open-modal pointer" id="botonNombre">Ingresar</a>
         </div>
     </nav>
     <div id="modalWindow">
@@ -27,19 +27,19 @@
                 <img src="Materiales/Materiales/imagen-modal.JPG" class="modalImg">
             </div>
             <div class="rightSideModal">
-                <div class="modal-header boxes ">
+                <div class="modal-header boxes">
                     <div class="modalImgBack pointer"><a href="#close" style="color:lightgray"><img src="Materiales/Materiales/icono-flecha.png" style="transform: scaleX(-1);">volver atras</a></div>
                     <div class="cls-modal pointer"><a href="#close" style="color:lightgray">X</a></div>
                 </div>
                 <div class="titleModal">REGISTRAR</div>
 
-                <div class="miEmpresa boxesModal">
+                <div class="miEmpresa boxesModal pointer boxsh">
                     <div class="fullLeftE"><img src="Materiales/Materiales/icono-maletin.png" class="centrado"></div>
                     <div class="titleModalBoxes ColorEmpresa">MI EMPRESA</div>
                     <div class="textModalBoxes">Breve explicacion a lo que nos referimos</div>
                     <div class="modalImgNext pointer"><img src="Materiales/Materiales/icono-flecha.png"> </div>
                 </div>
-                <div class="miOrganizacion boxesModal">
+                <div class="miOrganizacion boxesModal pointer boxsh2">
                     <div class="fullLeftO"><img src="Materiales/Materiales/icono-persona.png" class="centrado"></div>
                     <div class="titleModalBoxes ColorOrganizacion">MI ORGANIZACION</div>
                     <div class="textModalBoxes">Estamos para ayudarlos a tener exito</div>
@@ -205,9 +205,12 @@
                     </div>
                     <div class="textarea500pos">
                     <label for="textarea500" class="top">Mensaje</label>
-                    <textarea type="email" id="textarea500" placeholder="Escribe tu mensaje aqui..." maxlength="500" class="down fullwidth"></textarea>
+                    <textarea type="textarea" id="textarea500" placeholder="Escribe tu mensaje aqui..." maxlength="500" class="down fullwidth"></textarea>
                     </div>
-                    <button type="button" id="pressButton" class="btnsumbit Stylebutton">Enviar</button>
+                    <div class="pressButtonPos">
+                    <label id="txtpressButton" class="top"></label>
+                    <button type="button" id="pressButton" class="btnsumbit Stylebutton" onclick="validaremail()">Enviar</button>
+                    </div>
                 </form>
         </div>
     </main>
@@ -235,6 +238,7 @@
         <p class="derechos">Copyright ⓒ 2021 All rights reserverd.</p>
         </div>
     </footer>
+    <script src="JavaScript.js"></script>
 </body>
 
 </html>

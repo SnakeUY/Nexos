@@ -1,20 +1,15 @@
-if ($(window).width() < 480 || $(window).height() < 480) {
-        //the script has been added to the DOM, you can now use it's code
-
     let slideIndex = 1;
     showSlides(slideIndex);
 
-    // Next/previous controls
     function plusSlides(n) {
     showSlides(slideIndex += n);
     }
-
-    // Thumbnail image controls
     function currentSlide(n) {
     showSlides(slideIndex = n);
     }
 
     function showSlides(n) {
+    if ($(window).width() < 480 || $(window).height() < 480) {
     let i;
     let slides = document.getElementsByClassName("caja");
     let dots = document.getElementsByClassName("boton");
@@ -30,10 +25,41 @@ if ($(window).width() < 480 || $(window).height() < 480) {
     dots[slideIndex-1].className += " active";
     }
 }
-let button = document.getElementById("pressButton");
-button.addEventListener("click", addEmail);
 
-function addEmail() {
-  let inputemail = document.getElementById("email");
-  let email = inputemail.value;
+$('div.miEmpresa').click(function(){
+    let boton =document.getElementById("botonNombre");
+    let boton2 =document.getElementById("buttonNav");
+    boton.innerText ="EMPRESA";
+    boton.className+=" afterclick";
+    boton2.className+=" afterclick";
+});
+
+$('div.miOrganizacion').click(function(){
+    let boton =document.getElementById("botonNombre");
+    let boton2 =document.getElementById("buttonNav");
+    boton.innerText ="ORGANIZACION";
+    boton.className+=" afterclick";
+    boton2.className+=" afterclick";
+});
+
+function validaremail(){
+    console.log("dispatch")
+    const validateEmail = (email) => {
+        return email.match(
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
+      };
+
+        const $result = document.getElementById("txtpressButton")
+        const email =document.getElementById("email").value;
+        $result
+        if (validateEmail(email)) {
+            $result.innerText = email + ' is valid :)'
+            $result.classList.add("correct")
+            $result.classList.remove("wrong")
+        } else {
+            $result.innerText = email + ' is not valid :('
+            $result.classList.add("wrong")
+            $result.classList.remove("correct")
+        }
 }
